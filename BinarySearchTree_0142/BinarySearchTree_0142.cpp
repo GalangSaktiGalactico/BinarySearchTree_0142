@@ -23,6 +23,7 @@ public:
 	BinaryTree() {
 		ROOT = nullptr;  // Initializing ROOT to null
 	}
+
 	void insert(string element) { // Insert a Node in a Binary Search Tree
 		Node* newNode = new Node(element, nullptr, nullptr); // Allocate memmory for the new node
 		newNode->info = element;  // Assign to the data field of the new node
@@ -63,4 +64,7 @@ public:
 			}
 		}
 	}
+
+	void inorder(Node* ptr) // function to perform inorder traversal
+	{
 };
